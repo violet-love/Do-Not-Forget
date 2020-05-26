@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E8D93BAD2478A5010038FC21 /* DontForget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DontForget.app; path = "/Users/wrscomputers/Documents/Coding/Lambda School/Build Week 1/build/Debug-iphoneos/DontForget.app"; sourceTree = "<absolute>"; };
+		E800ADD2247DA96E00EBFF59 /* Don't Forget!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Don't Forget!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D93BB02478A5010038FC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D93BB22478A5010038FC21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E8D93BB72478A5010038FC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				E8D93BAF2478A5010038FC21 /* Don'tForget! */,
+				E800ADD2247DA96E00EBFF59 /* Don't Forget!.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +109,7 @@
 			);
 			name = "Don'tForget!";
 			productName = "Don'tForget!";
-			productReference = E8D93BAD2478A5010038FC21 /* DontForget.app */;
+			productReference = E800ADD2247DA96E00EBFF59 /* Don't Forget!.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -315,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Love.DontForget;
-				PRODUCT_NAME = DontForget;
+				PRODUCT_NAME = "Don't Forget!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Love.DontForget;
-				PRODUCT_NAME = DontForget;
+				PRODUCT_NAME = "Don't Forget!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

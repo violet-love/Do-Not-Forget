@@ -10,7 +10,7 @@
         <!--Don't Forget!-->
         <scene sceneID="k3G-ul-aSN">
             <objects>
-                <tableViewController id="3k9-wz-ddY" customClass="DontForgetMainTableViewController" customModule="DontForget" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3k9-wz-ddY" customClass="DontForgetMainTableViewController" customModule="Don_t_Forget_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gIN-4X-sNO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,11 +50,17 @@
                             <outlet property="delegate" destination="3k9-wz-ddY" id="2CA-LQ-hTv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Don't Forget!" id="anC-8Q-4RD"/>
+                    <navigationItem key="navigationItem" title="Don't Forget!" id="anC-8Q-4RD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zQ4-xR-Tp8">
+                            <connections>
+                                <segue destination="7re-M4-DOx" kind="show" id="hWR-yY-g1c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2m9-HZ-n7N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986.95652173913049" y="174.77678571428569"/>
+            <point key="canvasLocation" x="77" y="906"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w3k-zC-apr">
@@ -81,6 +87,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-yB-N1d">
                                 <rect key="frame" x="348" y="178" width="66" height="30"/>
                                 <state key="normal" title="Reminder"/>
+                                <connections>
+                                    <segue destination="yO2-8q-FsZ" kind="show" id="TlS-n1-JKJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -100,7 +109,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OgD-BB-PnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1934.7826086956522" y="174.77678571428569"/>
+            <point key="canvasLocation" x="1200" y="1706"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6yB-5A-9Iy">
+            <objects>
+                <viewController id="7re-M4-DOx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kwb-eV-fe9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GXn-pH-Myj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zvN-ey-FOz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Fs-Ay-i5U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1010" y="1706"/>
         </scene>
         <!--Reminder-->
         <scene sceneID="xOi-jD-v8n">
@@ -116,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxZ-sL-FNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2706" y="483"/>
+            <point key="canvasLocation" x="1781" y="2510"/>
         </scene>
         <!--Elapsed Time-->
         <scene sceneID="kgg-98-EHW">
@@ -132,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urw-uf-F4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2706" y="-118"/>
+            <point key="canvasLocation" x="633" y="2510"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1zP-Qj-k0h">
@@ -140,6 +165,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f1a-II-ulF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="gvJ-BO-AkX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
