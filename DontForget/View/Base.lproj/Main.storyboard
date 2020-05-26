@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="JAH-5g-tla" kind="show" id="mj4-IS-E9f"/>
+                                    <segue destination="JAH-5g-tla" kind="show" identifier="goToNoteScreen" id="mj4-IS-E9f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -75,12 +75,15 @@
                                 <rect key="frame" x="321" y="140" width="93" height="30"/>
                                 <state key="normal" title="Elapsed Time"/>
                                 <connections>
-                                    <segue destination="ra0-8R-aEb" kind="show" id="9g8-Tn-g3H"/>
+                                    <segue destination="ra0-8R-aEb" kind="presentation" identifier="goToTimerScreen" id="9g8-Tn-g3H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-yB-N1d">
                                 <rect key="frame" x="348" y="178" width="66" height="30"/>
                                 <state key="normal" title="Reminder"/>
+                                <connections>
+                                    <segue destination="yO2-8q-FsZ" kind="presentation" identifier="goToReminderSetup" id="450-jx-QXU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -107,7 +110,7 @@
             <objects>
                 <viewController id="yO2-8q-FsZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="26G-wd-jCZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4Ns-lE-KRV"/>
@@ -123,7 +126,7 @@
             <objects>
                 <viewController id="ra0-8R-aEb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1XI-wJ-k5k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tlb-Hd-tQ6"/>
