@@ -125,10 +125,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yve-Oo-yZQ">
                                 <rect key="frame" x="328" y="168" width="66" height="30"/>
                                 <state key="normal" title="Reminder"/>
+                                <connections>
+                                    <segue destination="yO2-8q-FsZ" kind="show" id="R2l-1w-DQ4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a76-6J-oA6">
                                 <rect key="frame" x="301" y="140" width="93" height="30"/>
                                 <state key="normal" title="Elapsed Time"/>
+                                <connections>
+                                    <segue destination="ra0-8R-aEb" kind="show" id="sna-Cg-Dgo"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your note here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSb-Xb-LLc">
                                 <rect key="frame" x="20" y="140" width="374" height="722"/>
@@ -167,14 +173,30 @@
                     <view key="view" contentMode="scaleToFill" id="26G-wd-jCZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPt-sp-Qtq">
+                                <rect key="frame" x="47" y="393" width="320" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L59-LZ-ybf">
+                                <rect key="frame" x="20" y="697" width="42" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LPt-sp-Qtq" firstAttribute="centerX" secondItem="4Ns-lE-KRV" secondAttribute="centerX" id="HMn-kx-EAq"/>
+                            <constraint firstItem="LPt-sp-Qtq" firstAttribute="centerY" secondItem="4Ns-lE-KRV" secondAttribute="centerY" id="W9X-od-HWG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Ns-lE-KRV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Reminder" id="XCI-TJ-hdu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxZ-sL-FNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="2510"/>
+            <point key="canvasLocation" x="484" y="2510"/>
         </scene>
         <!--Elapsed Time-->
         <scene sceneID="kgg-98-EHW">
@@ -183,14 +205,36 @@
                     <view key="view" contentMode="scaleToFill" id="1XI-wJ-k5k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8C-0t-3kz">
+                                <rect key="frame" x="47" y="393" width="320" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:13:13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmI-s4-nac">
+                                <rect key="frame" x="0.0" y="609" width="414" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="8Uc-UX-Ezo"/>
+                                    <constraint firstAttribute="width" constant="414" id="eSS-2g-8Vd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="95"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G8C-0t-3kz" firstAttribute="centerX" secondItem="tlb-Hd-tQ6" secondAttribute="centerX" id="Eq1-Un-giq"/>
+                            <constraint firstItem="G8C-0t-3kz" firstAttribute="centerY" secondItem="tlb-Hd-tQ6" secondAttribute="centerY" id="K1y-Hl-Zw9"/>
+                            <constraint firstItem="WmI-s4-nac" firstAttribute="leading" secondItem="tlb-Hd-tQ6" secondAttribute="leading" id="NvE-jQ-ajJ"/>
+                            <constraint firstItem="WmI-s4-nac" firstAttribute="top" secondItem="G8C-0t-3kz" secondAttribute="bottom" id="UZ6-op-kkQ"/>
+                            <constraint firstItem="tlb-Hd-tQ6" firstAttribute="trailing" secondItem="WmI-s4-nac" secondAttribute="trailing" id="dzc-UU-SS7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tlb-Hd-tQ6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Elapsed Time" id="7Kr-z4-RZH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urw-uf-F4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="633" y="2510"/>
+            <point key="canvasLocation" x="-452.17391304347831" y="2509.8214285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1zP-Qj-k0h">
@@ -211,4 +255,8 @@
             <point key="canvasLocation" x="76.811594202898561" y="174.77678571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sna-Cg-Dgo"/>
+        <segue reference="R2l-1w-DQ4"/>
+    </inferredMetricsTieBreakers>
 </document>
