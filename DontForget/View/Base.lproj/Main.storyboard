@@ -71,50 +71,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0p-Zr-Hcp">
-                                <rect key="frame" x="321" y="140" width="93" height="30"/>
+                                <rect key="frame" x="301" y="140" width="93" height="30"/>
                                 <state key="normal" title="Elapsed Time"/>
                                 <connections>
                                     <segue destination="ra0-8R-aEb" kind="show" id="9g8-Tn-g3H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-yB-N1d">
-                                <rect key="frame" x="348" y="178" width="66" height="30"/>
+                                <rect key="frame" x="328" y="178" width="66" height="30"/>
                                 <state key="normal" title="Reminder"/>
                                 <connections>
                                     <segue destination="yO2-8q-FsZ" kind="show" id="TlS-n1-JKJ"/>
                                 </connections>
                             </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-6X-dbZ">
-                                <rect key="frame" x="0.0" y="852" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem systemItem="save" id="v8C-EK-MYr"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="1Ei-ub-JAv"/>
-                                    <barButtonItem systemItem="cancel" id="IRc-c8-Xaj"/>
-                                </items>
-                            </toolbar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8z-zx-V8k">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Your saved note shourld be here" textAlignment="justified" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-3F-XCI">
+                                <rect key="frame" x="20" y="140" width="374" height="722"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="C7w-yB-N1d" firstAttribute="top" secondItem="f0p-Zr-Hcp" secondAttribute="bottom" constant="8" id="3Jk-Nm-Ud2"/>
-                            <constraint firstItem="tdW-uO-CUO" firstAttribute="bottom" secondItem="e8z-zx-V8k" secondAttribute="bottom" id="74u-Jg-gPP"/>
-                            <constraint firstItem="tdW-uO-CUO" firstAttribute="trailing" secondItem="e8z-zx-V8k" secondAttribute="trailing" id="Blc-ag-x9a"/>
-                            <constraint firstItem="e8z-zx-V8k" firstAttribute="leading" secondItem="tdW-uO-CUO" secondAttribute="leading" id="UhH-gz-1Lj"/>
+                            <constraint firstItem="EbY-3F-XCI" firstAttribute="top" secondItem="tdW-uO-CUO" secondAttribute="top" id="8IX-oV-ryZ"/>
+                            <constraint firstItem="EbY-3F-XCI" firstAttribute="leading" secondItem="tdW-uO-CUO" secondAttribute="leading" constant="20" id="UUk-sn-ADO"/>
                             <constraint firstItem="f0p-Zr-Hcp" firstAttribute="top" secondItem="tdW-uO-CUO" secondAttribute="top" id="Xv8-Ng-0vN"/>
-                            <constraint firstAttribute="trailing" secondItem="C7w-yB-N1d" secondAttribute="trailing" id="aHe-ya-fGL"/>
-                            <constraint firstItem="e8z-zx-V8k" firstAttribute="top" secondItem="tdW-uO-CUO" secondAttribute="top" id="cTO-mz-btz"/>
-                            <constraint firstAttribute="trailing" secondItem="f0p-Zr-Hcp" secondAttribute="trailing" id="qNx-M8-sMm"/>
+                            <constraint firstAttribute="trailing" secondItem="C7w-yB-N1d" secondAttribute="trailing" constant="20" id="aHe-ya-fGL"/>
+                            <constraint firstItem="tdW-uO-CUO" firstAttribute="trailing" secondItem="EbY-3F-XCI" secondAttribute="trailing" constant="20" id="nhM-Sc-YGb"/>
+                            <constraint firstItem="tdW-uO-CUO" firstAttribute="bottom" secondItem="EbY-3F-XCI" secondAttribute="bottom" id="nmM-hA-EUS"/>
+                            <constraint firstAttribute="trailing" secondItem="f0p-Zr-Hcp" secondAttribute="trailing" constant="20" id="qNx-M8-sMm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tdW-uO-CUO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BFo-5p-sD2"/>
+                    <navigationItem key="navigationItem" id="BFo-5p-sD2">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="save" id="oUX-w2-dMz"/>
+                            <barButtonItem systemItem="cancel" id="uHR-k2-K9m"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OgD-BB-PnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +133,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your note here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSb-Xb-LLc">
                                 <rect key="frame" x="20" y="140" width="374" height="722"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
