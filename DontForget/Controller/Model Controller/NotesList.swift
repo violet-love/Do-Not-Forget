@@ -27,8 +27,8 @@ class NotesList {
 var persistentFileURL: URL? {
     let fileManager = FileManager.default
     let documentsDir = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
-    let notesURL = documentsDir?.appendingPathComponent("notes.plist")
-    return notesURL
+    let dontForgetURL = documentsDir?.appendingPathComponent("notes.plist")
+    return dontForgetURL
 }
 
 func saveToPersistanceStore() {
