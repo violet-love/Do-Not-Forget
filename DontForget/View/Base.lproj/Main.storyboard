@@ -73,9 +73,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0p-Zr-Hcp">
                                 <rect key="frame" x="301" y="140" width="93" height="30"/>
                                 <state key="normal" title="Elapsed Time"/>
-                                <connections>
-                                    <segue destination="ra0-8R-aEb" kind="show" id="9g8-Tn-g3H"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-yB-N1d">
                                 <rect key="frame" x="328" y="178" width="66" height="30"/>
@@ -84,7 +81,7 @@
                                     <segue destination="yO2-8q-FsZ" kind="show" id="TlS-n1-JKJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Your saved note shourld be here" textAlignment="justified" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-3F-XCI">
+                            <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Your saved note should be here" textAlignment="justified" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-3F-XCI">
                                 <rect key="frame" x="20" y="140" width="374" height="722"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
@@ -123,17 +120,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yve-Oo-yZQ">
-                                <rect key="frame" x="328" y="168" width="66" height="30"/>
+                                <rect key="frame" x="328" y="145" width="66" height="30"/>
                                 <state key="normal" title="Reminder"/>
                                 <connections>
                                     <segue destination="yO2-8q-FsZ" kind="show" id="R2l-1w-DQ4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a76-6J-oA6">
-                                <rect key="frame" x="301" y="140" width="93" height="30"/>
-                                <state key="normal" title="Elapsed Time"/>
-                                <connections>
-                                    <segue destination="ra0-8R-aEb" kind="show" id="sna-Cg-Dgo"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your note here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DSb-Xb-LLc">
@@ -145,13 +135,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="GXn-pH-Myj" firstAttribute="trailing" secondItem="yve-Oo-yZQ" secondAttribute="trailing" constant="20" id="7CM-gS-fEi"/>
-                            <constraint firstItem="GXn-pH-Myj" firstAttribute="trailing" secondItem="a76-6J-oA6" secondAttribute="trailing" constant="20" id="GyZ-N3-wTq"/>
-                            <constraint firstItem="yve-Oo-yZQ" firstAttribute="top" secondItem="GXn-pH-Myj" secondAttribute="top" constant="28" id="P1x-1O-mXd"/>
                             <constraint firstItem="DSb-Xb-LLc" firstAttribute="top" secondItem="GXn-pH-Myj" secondAttribute="top" id="YUE-BD-sM4"/>
                             <constraint firstItem="GXn-pH-Myj" firstAttribute="trailing" secondItem="DSb-Xb-LLc" secondAttribute="trailing" constant="20" id="ZRg-XW-bmW"/>
+                            <constraint firstItem="yve-Oo-yZQ" firstAttribute="top" secondItem="GXn-pH-Myj" secondAttribute="top" constant="5" id="eIL-bR-GBc"/>
                             <constraint firstItem="DSb-Xb-LLc" firstAttribute="leading" secondItem="GXn-pH-Myj" secondAttribute="leading" constant="20" id="jOM-5e-43v"/>
                             <constraint firstItem="GXn-pH-Myj" firstAttribute="bottom" secondItem="DSb-Xb-LLc" secondAttribute="bottom" id="tdz-bq-ldA"/>
-                            <constraint firstItem="a76-6J-oA6" firstAttribute="top" secondItem="GXn-pH-Myj" secondAttribute="top" id="u8e-6y-rmO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GXn-pH-Myj"/>
                     </view>
@@ -207,10 +195,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8C-0t-3kz">
-                                <rect key="frame" x="47" y="393" width="320" height="216"/>
+                                <rect key="frame" x="47" y="345" width="320" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:13:13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmI-s4-nac">
-                                <rect key="frame" x="0.0" y="609" width="414" height="114"/>
+                                <rect key="frame" x="0.0" y="561" width="414" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="8Uc-UX-Ezo"/>
                                     <constraint firstAttribute="width" constant="414" id="eSS-2g-8Vd"/>
@@ -256,7 +244,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sna-Cg-Dgo"/>
         <segue reference="R2l-1w-DQ4"/>
     </inferredMetricsTieBreakers>
 </document>
