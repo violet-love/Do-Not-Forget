@@ -47,8 +47,8 @@ func loadFromPersistentStore() {
         guard let persistentFileURL = persistentFileURL else { return }
         let notesPlist = try Data(contentsOf: persistentFileURL)
         let decoder = PropertyListDecoder()
-        let decodeditems = try decoder.decode(notesCreated.self, from: notesPlist)
-        self.notes = decodeditems
+        let decodeditems = try decoder.decode([Notes].self, from: notesPlist)
+        self.notesCreated = decodeditems
     } catch {
         print("Error loading items from plist: \(error)")
     }
