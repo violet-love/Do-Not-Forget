@@ -73,6 +73,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0p-Zr-Hcp">
                                 <rect key="frame" x="301" y="140" width="93" height="30"/>
                                 <state key="normal" title="Elapsed Time"/>
+                                <connections>
+                                    <segue destination="ra0-8R-aEb" kind="show" id="5KO-Hf-XRs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-yB-N1d">
                                 <rect key="frame" x="328" y="178" width="66" height="30"/>
@@ -184,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxZ-sL-FNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="2510"/>
+            <point key="canvasLocation" x="257" y="2500"/>
         </scene>
         <!--Elapsed Time-->
         <scene sceneID="kgg-98-EHW">
@@ -194,14 +197,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8C-0t-3kz">
-                                <rect key="frame" x="47" y="345" width="320" height="216"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:13:13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmI-s4-nac">
-                                <rect key="frame" x="0.0" y="561" width="414" height="114"/>
+                                <rect key="frame" x="0.0" y="444" width="414" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="8Uc-UX-Ezo"/>
-                                    <constraint firstAttribute="width" constant="414" id="eSS-2g-8Vd"/>
+                                    <constraint firstAttribute="height" constant="114" id="Xcg-aW-XzH"/>
+                                    <constraint firstAttribute="width" constant="414" id="laA-zH-qw5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="95"/>
                                 <nil key="textColor"/>
@@ -210,11 +210,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="G8C-0t-3kz" firstAttribute="centerX" secondItem="tlb-Hd-tQ6" secondAttribute="centerX" id="Eq1-Un-giq"/>
-                            <constraint firstItem="G8C-0t-3kz" firstAttribute="centerY" secondItem="tlb-Hd-tQ6" secondAttribute="centerY" id="K1y-Hl-Zw9"/>
-                            <constraint firstItem="WmI-s4-nac" firstAttribute="leading" secondItem="tlb-Hd-tQ6" secondAttribute="leading" id="NvE-jQ-ajJ"/>
-                            <constraint firstItem="WmI-s4-nac" firstAttribute="top" secondItem="G8C-0t-3kz" secondAttribute="bottom" id="UZ6-op-kkQ"/>
-                            <constraint firstItem="tlb-Hd-tQ6" firstAttribute="trailing" secondItem="WmI-s4-nac" secondAttribute="trailing" id="dzc-UU-SS7"/>
+                            <constraint firstItem="WmI-s4-nac" firstAttribute="leading" secondItem="tlb-Hd-tQ6" secondAttribute="leading" id="1DG-rI-g8J"/>
+                            <constraint firstItem="WmI-s4-nac" firstAttribute="trailing" secondItem="tlb-Hd-tQ6" secondAttribute="trailing" id="4Rm-4f-v2v"/>
+                            <constraint firstItem="WmI-s4-nac" firstAttribute="centerY" secondItem="tlb-Hd-tQ6" secondAttribute="centerY" id="BXY-4Y-5hj"/>
+                            <constraint firstItem="WmI-s4-nac" firstAttribute="centerX" secondItem="tlb-Hd-tQ6" secondAttribute="centerX" id="bxB-xj-jNJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tlb-Hd-tQ6"/>
                     </view>
@@ -222,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urw-uf-F4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-452.17391304347831" y="2509.8214285714284"/>
+            <point key="canvasLocation" x="1159" y="2490"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1zP-Qj-k0h">
@@ -244,6 +243,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="R2l-1w-DQ4"/>
+        <segue reference="TlS-n1-JKJ"/>
     </inferredMetricsTieBreakers>
 </document>
