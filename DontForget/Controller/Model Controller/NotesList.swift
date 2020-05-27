@@ -17,9 +17,11 @@ class NotesList {
     }
     
     func createItem() {
+        let x = Notes(noteBlock: "Hello This is a test Note", dateCreated: Date(), alarm: 65.87)
+        notesCreated.append(x)
         saveToPersistanceStore()
     }
-}
+
 
 //MARK: - Persistence
 var persistentFileURL: URL? {
@@ -45,7 +47,7 @@ func loadFromPersistentStore() {
         guard let persistentFileURL = persistentFileURL else { return }
         let notesPlist = try Data(contentsOf: persistentFileURL)
         let decoder = PropertyListDecoder()
-        let decodeditems = try decoder.decode([Notes].self, from: notesPlist)
+        let decodeditems = try decoder.decode(notesCreated.self, from: notesPlist)
         self.notes = decodeditems
     } catch {
         print("Error loading items from plist: \(error)")
