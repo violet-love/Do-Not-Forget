@@ -1,5 +1,5 @@
 //
-//  Notes.swift
+//  NotesList.swift
 //  Don'tForget!
 //
 //  Created by Jason Hoover on 5/26/20.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-struct Notes: Codable {
-    let noteBlock: String
-    let dateCreated: Date
-    var alarm: TimeInterval
+class NotesList {
+    
+    var notesCreated: [Notes] = []
+    
+    
 }
-

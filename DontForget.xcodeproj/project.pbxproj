@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384E4824247DE33C00F1D614 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E4823247DE33C00F1D614 /* NotesTableViewCell.swift */; };
+		384E4827247DE61F00F1D614 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E4826247DE61F00F1D614 /* NotesList.swift */; };
 		38D29D5F247DC83C00F66914 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D29D5E247DC83C00F66914 /* Notes.swift */; };
+		38D29D61247DDF5600F66914 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D29D60247DDF5600F66914 /* NotesTableViewController.swift */; };
 		E8D93BB12478A5010038FC21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93BB02478A5010038FC21 /* AppDelegate.swift */; };
 		E8D93BB32478A5010038FC21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D93BB22478A5010038FC21 /* SceneDelegate.swift */; };
 		E8D93BB82478A5010038FC21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D93BB62478A5010038FC21 /* Main.storyboard */; };
@@ -16,8 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		384E4823247DE33C00F1D614 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		384E4826247DE61F00F1D614 /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
 		38D29D5D247DC62100F66914 /* DontForget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontForget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D29D5E247DC83C00F66914 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		38D29D60247DDF5600F66914 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		E8D93BB02478A5010038FC21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8D93BB22478A5010038FC21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E8D93BB72478A5010038FC21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		384E4822247DE2EA00F1D614 /* Collection Controller */ = {
+			isa = PBXGroup;
+			children = (
+				384E4823247DE33C00F1D614 /* NotesTableViewCell.swift */,
+			);
+			path = "Collection Controller";
+			sourceTree = "<group>";
+		};
+		384E4825247DE5E200F1D614 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				384E4826247DE61F00F1D614 /* NotesList.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		3866627D247CA74D003259CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -49,6 +71,9 @@
 		3866627E247CA795003259CC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				384E4825247DE5E200F1D614 /* Model Controller */,
+				384E4822247DE2EA00F1D614 /* Collection Controller */,
+				38D29D60247DDF5600F66914 /* NotesTableViewController.swift */,
 			);
 			name = Controller;
 			path = DontForget/Controller;
@@ -167,6 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D93BB12478A5010038FC21 /* AppDelegate.swift in Sources */,
+				384E4827247DE61F00F1D614 /* NotesList.swift in Sources */,
+				38D29D61247DDF5600F66914 /* NotesTableViewController.swift in Sources */,
+				384E4824247DE33C00F1D614 /* NotesTableViewCell.swift in Sources */,
 				E8D93BB32478A5010038FC21 /* SceneDelegate.swift in Sources */,
 				38D29D5F247DC83C00F66914 /* Notes.swift in Sources */,
 			);
@@ -313,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W33T39N23M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DontForget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W33T39N23M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DontForget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
