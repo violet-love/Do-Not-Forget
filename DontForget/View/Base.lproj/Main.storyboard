@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="JAH-5g-tla" kind="show" id="mj4-IS-E9f"/>
+                                    <segue destination="JAH-5g-tla" kind="show" identifier="goToNoteScreen" id="mj4-IS-E9f"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,14 +74,14 @@
                                 <rect key="frame" x="301" y="140" width="93" height="30"/>
                                 <state key="normal" title="Elapsed Time"/>
                                 <connections>
-                                    <segue destination="ra0-8R-aEb" kind="show" id="5KO-Hf-XRs"/>
+                                    <segue destination="ra0-8R-aEb" kind="presentation" identifier="goToTimerScreen" id="9g8-Tn-g3H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-yB-N1d">
                                 <rect key="frame" x="328" y="178" width="66" height="30"/>
                                 <state key="normal" title="Reminder"/>
                                 <connections>
-                                    <segue destination="yO2-8q-FsZ" kind="show" id="TlS-n1-JKJ"/>
+                                    <segue destination="yO2-8q-FsZ" kind="presentation" identifier="goToReminderSetup" id="450-jx-QXU"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Your saved note should be here" textAlignment="justified" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EbY-3F-XCI">
@@ -162,7 +162,7 @@
             <objects>
                 <viewController id="yO2-8q-FsZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="26G-wd-jCZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPt-sp-Qtq">
@@ -194,7 +194,7 @@
             <objects>
                 <viewController id="ra0-8R-aEb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1XI-wJ-k5k">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:13:13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmI-s4-nac">
